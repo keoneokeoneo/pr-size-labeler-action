@@ -1,6 +1,6 @@
 name: 'PR Size Labeler'
 description: "Add size label to a pull request"
-author: "Soomgo-Frontend"
+author: "keoneokeoneo"
 inputs:
   repo-token:
     description: 'A token for the repo'
