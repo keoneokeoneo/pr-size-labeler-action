@@ -8,6 +8,6 @@ jobs:
   pr-size-labeler:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./action.yml
+      - uses: keoneokeoneo/pr-size-labeler-action@master
         with:
           configuration-path: './github/config.yml'
