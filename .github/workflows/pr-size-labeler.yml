@@ -8,6 +8,7 @@ jobs:
   pr-size-labeler:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./action.yml
+      - uses: actions/checkout@v2
+      - uses: ./
         with:
           configuration-path: './github/config.yml'

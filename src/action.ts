@@ -24,7 +24,7 @@ export default async function action(context: Context = github.context) {
     const octokit = new Octokit(GITHUB_TOKEN, context);
     //const { number, base, head } = pull_request;
 
-    // Read configuration file
+    // Read configuration file with config path
     const config = await octokit.getContent(configPath);
     core.info(JSON.stringify(config, null, 2));
 
