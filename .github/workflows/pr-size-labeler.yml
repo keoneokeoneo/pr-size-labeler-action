@@ -1,0 +1,13 @@
+name: PR Size Labeler
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  pr-size-labeler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./action.yml
+        with:
+          configuration-path: './github/config.yml'

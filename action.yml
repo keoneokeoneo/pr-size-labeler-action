@@ -1,0 +1,14 @@
+name: 'PR Size Labeler'
+description: "Add size label to a pull request"
+author: "Soomgo-Frontend"
+inputs:
+  repo-token:
+    description: 'A token for the repo'
+    default: ${{ github.token }}
+    required: true
+  configuration-path:
+    description: A path for action configuration 
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
